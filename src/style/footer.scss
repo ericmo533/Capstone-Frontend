@@ -1,0 +1,42 @@
+.footer {
+  background-color: lightgray;
+  font-family: "Ubuntu Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  text-align: center;
+  width:100%;
+  margin-top: auto;
+  box-shadow: aquamarine;
+
+
+  .links-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
+
+    .links-wrapper {
+      margin-top: 40px;
+      color: wheat;
+      text-align: center;
+      text-decoration: none;
+      width: 150px;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    .copyright-wrapper {
+      margin-top: 0px;
+      margin-bottom: 10px;
+      font-size: 0.7em;
+      color: black;
+      font-weight: 200;
+    }
+}

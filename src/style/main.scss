@@ -1,0 +1,32 @@
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'montserrat';
+    text-decoration: none;
+
+    // height: 100%;
+}
+
+.content  {
+    min-height: 100vh;
+    
+}
+
+
+.app {
+    margin-top: 2rem;
+}
+
+@import './navigation.scss';
+@import './contact.scss';
+@import './footer.scss';
+@import './home.scss';
+@import './form.scss';
+@import './fleet.scss';
+@import './gear.scss';
+@import './cart.scss';
+@import './about.scss';
