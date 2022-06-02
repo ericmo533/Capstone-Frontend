@@ -7,7 +7,7 @@ export default function Gear() {
     const [gearItems, setGearItems] = useState([]);
 
     const getAllGearItems = () => {
-        axios.get('http://127.0.0.1:5000/gear-item/get')
+        axios.get('https://trident-capstone-api.herokuapp.com/gear-item/get')
         .then(res => {
             setGearItems(res.data);
         })

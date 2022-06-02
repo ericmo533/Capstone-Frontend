@@ -5,7 +5,7 @@ export default function CartTotal() {
     const [cart, setCart] = useState([]);
 
     const renderCart = () => {
-        axios.get('http://127.0.0.1:5000/cart/get')
+        axios.get('https://trident-capstone-api.herokuapp.com/cart/get')
         .then(res => {
             setCart(res.data)
         })

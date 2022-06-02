@@ -4,7 +4,7 @@ export default function GearItem(props) {
     const {id, title, price, description, img} = props.item;
     
     const handleAddToCart = () => {
-        fetch('http://127.0.0.1:5000/cart/add', {
+        fetch('https://trident-capstone-api.herokuapp.com/cart/add', {
             method: 'POST',
             headers: { 'content-type': 'application/json'},
             body: JSON.stringify({

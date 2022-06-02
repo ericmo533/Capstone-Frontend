@@ -9,7 +9,7 @@ export default function Cart() {
     const [cart, setCart] = useState([]);
     
     const getAllCartItems = () => {
-        axios.get('http://127.0.0.1:5000/cart/get')
+        axios.get('https://trident-capstone-api.herokuapp.com/cart/get')
         .then(res => {
             setCart(res.data);
         })
@@ -19,7 +19,7 @@ export default function Cart() {
     }
 
     const handleDeleteClick = (id) => {
-        axios.delete(`http://127.0.0.1:5000/cart/delete/${id}`)
+        axios.delete(`https://trident-capstone-api.herokuapp.com/cart/delete/${id}`)
         .then(res => {
             setCart(cart.filter(cartItem => {
                 return cartItem.id != id;
@@ -49,7 +49,7 @@ export default function Cart() {
     }
 
     const handleCheckoutClick = () => {
-        axios.delete('http://127.0.0.1:5000/cart/delete')
+        axios.delete('https://trident-capstone-api.herokuapp.com/cart/delete')
         .then(() => {
             setCart([])
         })
