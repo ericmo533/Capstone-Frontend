@@ -1,4 +1,8 @@
-
+.trident {
+  .container {
+    padding: 10px 10px;
+  }
+}
 .gear-card{
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr; 
@@ -16,6 +20,7 @@
   }
   
   .add-to-cart-button {
+    
     height: 50px;
     width: 150px;
     background-color: aquamarine;
