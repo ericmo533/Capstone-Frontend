@@ -1,7 +1,10 @@
 import React from 'react';
+import axios from 'axios';
+
 
 export default function GearItem(props) {
     const {id, title, price, description, img} = props.item;
+
     
     const handleAddToCart = () => {
         fetch('https://trident-capstone-api.herokuapp.com/cart/add', {
@@ -23,6 +26,17 @@ export default function GearItem(props) {
         })
     }
 
+    const handleDeleteGear = (id) => {
+        axios.delete(`http://127.0.0.1:5000/gear-item/delete/${id}`)
+        .then(res => res.json())
+            .then(res => {
+                console.log(res)
+            })
+            .catch(error => {
+                console.log('Error deleting gear item', error);
+            })
+    }
+
         return (
             <div className="trident" key={id}>
                 <div className="container">
@@ -34,6 +48,9 @@ export default function GearItem(props) {
                             <p className="description"><br />{description}</p>
                             <button onClick={() => handleAddToCart()} className="add-to-cart-button">
                                 Add to Cart
+                            </button>
+                            <button onClick={() => handleDeleteGear(id)} className="delete-gear-item">
+                                Delete
                             </button>
                         </div>
                     </div>

@@ -65,6 +65,7 @@ export default function Cart() {
     }, [])
 
     return (
+        <div className='cart-box'>
         <div className="cart-container">
             <OrderConfirmationModal 
             confirmationModalIsOpen={confirmationModalIsOpen}
@@ -76,5 +77,6 @@ export default function Cart() {
             
             {cart.length != 0 ? <button className="submit-order-btn" type="submit" onClick={handleSubmitOrder}>Submit Order</button> : null}
         </div>
+    </div>
     )
 }

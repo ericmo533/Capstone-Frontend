@@ -28,10 +28,12 @@ export default function Gear() {
     }, [])
 
         return (
+        <div className='trident-gear'>
           <div className="gear-container">
             <div className="gear-card">
                 {renderGearItems()}
             </div>
+          </div>
           </div>
         );
 }

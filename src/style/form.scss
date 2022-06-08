@@ -101,7 +101,7 @@
 
 .form textarea {
   margin-top:20px;
-  width: 50%;
+  width: 70%;
   height: 150px;
   border-radius: 3px;
   border: 3px solid #11122b;
@@ -165,4 +165,19 @@
   outline: none;
   transition: 0.3s;
   cursor: pointer;
+}
+
+@media screen and(max-width: 375px) {
+  .form {
+  .form-group {
+    width: 90%;
+  }
+
+  .form-group {
+  .form textarea {
+    width: none;
+  }
+}
+}
+
 }

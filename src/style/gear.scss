@@ -1,19 +1,12 @@
-.trident {
-  .container {
-    padding: 10px 10px;
-  }
-}
+
 .gear-card{
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr; 
-  // gap: 10px 10px;
   margin-top: 50px;
-  // margin-right: 50px;
   height: 100%;
   width: 100vw;
-  // padding-left: 15px;
-  // padding-right: 10px;
+  
   text-align: center;
   padding: 0;
     
@@ -35,6 +28,21 @@
     }
   
 }
+  .delete-gear-item {
+    height: 50px;
+    width: 150px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      background-color: purple;
+      color: white;
+
+    }
+  
+}
 
 .gear-card img {
   width: 300px;
@@ -42,20 +50,20 @@
   align-self: center;
 }
 
-@media screen and(max-width: 850px) {
-  .gear-card{
-    display: grid; 
-    grid-template-columns: 1fr; 
-    // gap: 10px 10px;
+@media screen and(max-width: 400px) {
+  .container{
     margin-top: 50px;
-    // margin-right: 50px;
     height: 100%;
     width: 100vw;
     // padding-left: 15px;
     // padding-right: 10px;
     text-align: center;
     padding: 0;
-      
+    }
+
+    .gear-card {
+      display: grid;
+      grid-template-columns: 1fr;
     }
     
     .add-to-cart-button {

@@ -30,7 +30,7 @@ export default function() {
             <div className="spacer10"></div>
 
             <div className="centered-btn-wrapper">
-                <button type= "submit" class="btn">Send</button>
+                <button type= "submit" class="contact-btn">Send</button>
             </div>
         </div>
 

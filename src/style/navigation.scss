@@ -93,10 +93,13 @@
     
   }
 }
-@media screen and(max-width:850px) {
+@media screen and(max-width:400px) {
   .nav-wrapper {
     height: 100%;
-    width: 65vw;
+    width: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: -30px;
 
     .nav-link-wrapper{
       font-size: 1.5em;
@@ -147,6 +150,9 @@
       color: red;
       transition: 0.5s;
     }
+  }
+  .nav-menu {
+    padding-top: 0px;
   }
  
 }
