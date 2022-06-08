@@ -27,7 +27,7 @@ export default function GearItem(props) {
     }
 
     const handleDeleteGear = (id) => {
-        axios.delete(`http://127.0.0.1:5000/gear-item/delete/${id}`)
+        axios.delete(`'https://trident-capstone-api.herokuapp.com/delete/${id}`)
         .then(res => res.json())
             .then(res => {
                 console.log(res)
